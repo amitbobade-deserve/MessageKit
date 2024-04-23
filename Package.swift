@@ -42,7 +42,7 @@ let package = Package(
             path: "Sources",
             exclude: ["Supporting/Info.plist", "Supporting/MessageKit.h"],
             resources: [
-                .process("Resources")
+                .copy("Resources")
             ],
             swiftSettings: [SwiftSetting.define("IS_SPM")]
         ),
